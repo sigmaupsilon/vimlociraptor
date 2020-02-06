@@ -106,6 +106,7 @@ let g:ale_linters = {
       \ 'ruby': ['standardrb'],
       \ 'python': ['flake8'],
       \ 'latex': ['chktex'],
+      \ 'sh': ['language_server'],
       \}
 
 let g:ale_fixers = {
