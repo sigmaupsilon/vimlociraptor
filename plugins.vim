@@ -123,6 +123,8 @@ Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
 
 Plug 'elixir-editors/vim-elixir'
 
+Plug 'tomtom/tcomment_vim'
+
 " > to take a look
 " https://github.com/autozimu/LanguageClient-neovim
 " https://github.com/avdgaag/vim-phoenix
