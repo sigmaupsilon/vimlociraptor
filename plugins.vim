@@ -99,7 +99,7 @@ Plug 'Yggdroot/indentLine', { 'on': 'IndentLinesToggle' }
 Plug 'norcalli/nvim-colorizer.lua' " high-performance color highlighter for Neovim
 
 " > status line
-Plug 'itchyny/lightline.vim' " really light and fast status line
+Plug 'itchyny/lightline.vim' " really light and fast status line	
 Plug 'maximbaz/lightline-ale' " integrates ALE and Lightline
 
 " > windows
@@ -140,7 +140,7 @@ Plug 'tomtom/tcomment_vim'
 " https://github.com/avdgaag/vim-phoenix
 " https://github.com/Shougo/deoplete.nvim
 " https://github.com/junegunn/vim-easy-align
-"
+
 " > keep an eye
 " https://github.com/hardcoreplayers/spaceline.vim, cool, but not customizable
 " https://github.com/reedes/vim-wordy
