@@ -87,7 +87,7 @@ Plug 'Yggdroot/indentLine', { 'on': 'IndentLinesToggle' }
 Plug 'norcalli/nvim-colorizer.lua' " high-performance color highlighter for Neovim
 
 " > status line
-Plug 'itchyny/lightline.vim' " really light and fast status line
+Plug 'itchyny/lightline.vim' " really light and fast status line	
 Plug 'maximbaz/lightline-ale' " integrates ALE and Lightline
 
 " > windows
