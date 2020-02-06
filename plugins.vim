@@ -121,6 +121,8 @@ Plug 'honza/vim-snippets'
 
 Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
 
+Plug 'elixir-editors/vim-elixir'
+
 " > to take a look
 " https://github.com/autozimu/LanguageClient-neovim
 " https://github.com/avdgaag/vim-phoenix
