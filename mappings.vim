@@ -1,9 +1,12 @@
 " MAPPINGS --------------------------------------------
 let mapleader = "\<Space>"
+let maplocalleader = ","
 
 call which_key#register('<Space>', "g:which_key_map")
 nnoremap <silent> <leader> :<c-u>WhichKey '<Space>'<CR>
+nnoremap <silent> <localleader> :<c-u>WhichKey ','<CR>
 vnoremap <silent> <leader> :<c-u>WhichKeyVisual '<Space>'<CR>
+vnoremap <silent> <localleader> :<c-u>WhichKeyVisual ','<CR>
 
 let g:which_key_map = {}
 

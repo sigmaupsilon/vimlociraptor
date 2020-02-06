@@ -7,8 +7,8 @@ filetype indent plugin on
 set wrap
 
 " don't show line numbers
-set nonumber
-set norelativenumber
+" set nonumber
+" set norelativenumber
 
 " Show partial commands in the last line of the screen
 set showcmd
@@ -65,7 +65,7 @@ set mouse=a
 
 " Indentation settings for using 2 spaces instead of tabs.
 " Do not change 'tabstop' from its default value of 8 with this setup.
-set ts=2 sw=2 sts=2
+set ts=4 sw=4 sts=4
 set expandtab
 
 " Reload the file on changes
@@ -101,21 +101,19 @@ let g:ale_ruby_rubocop_executable = 'bundle'
 " don't run linters when opening a file
 let g:ale_lint_on_enter = 0
 
-" add standardrb back
+" ALE config
 let g:ale_linters = {
-      \ 'ruby': ['rubocop'],
-      \ 'javascript': ['eslint'],
-      \ 'typescript': ['eslint'],
-      \ 'typescript.tsx': ['eslint'],
+      \ 'ruby': ['standardrb'],
+      \ 'python': ['flake8'],
+      \ 'latex': ['chktex'],
       \}
 
 let g:ale_fixers = {
-      \ 'ruby': ['rubocop'],
-      \ 'javascript': ['eslint'],
-      \ 'typescript': ['eslint'],
-      \ 'typescript.tsx': ['eslint'],
-      \}
-
+      \ 'ruby': ['standardrb'],
+      \ 'python': ['flake8'],
+      \ 'latex': ['chktex'],
+     \}
+ 
 " keep sign column always open
 let g:ale_sign_column_always = 1
 
@@ -167,6 +165,14 @@ let g:tabulousTabLabelRenameFixed = 1
 " enable fenced code block syntax highlighting in markdown files
 let g:markdown_fenced_languages = ['ruby', 'elixir', 'javascript', 'html', 'python', 'bash=sh', 'vim', 'help', 'sql']
 
+let g:tex_flavor = 'latex'
+let g:vimtex_view_general_viewer = 'evince'
+let g:tex_conceal = 'abdgm'
+
+" For conceal markers.
+if has('conceal')
+  set conceallevel=2 concealcursor=niv
+endif
 
 " ----- needed for CoC -----
 
@@ -225,3 +231,7 @@ let $FZF_DEFAULT_OPTS='--layout=reverse'
 
 " don't need to create BufKill's default mappings
 let g:BufKillCreateMappings = 0
+
+let g:UltiSnipsExpandTrigger="<tab>"
+let g:UltiSnipsJumpForwardTrigger="<c-b>"
+let g:UltiSnipsJumpBackwardTrigger="<c-z>"

@@ -17,23 +17,26 @@ Plug 'qpkorr/vim-bufkill' " :BB :BF, like :bb and bf but in the context of the w
 " > editing tools
 Plug 'scrooloose/nerdcommenter' " comment code
 
-" > ruby
-Plug 'tpope/vim-rbenv' " sets ruby path and provide rbenv command
-Plug 'tpope/vim-bundler' " very usefull when generating ctags for gems and more
-Plug 'vim-ruby/vim-ruby', { 'for': ['ruby', 'eruby'] } " ruby support
-Plug 'tpope/vim-rails', { 'for': ['ruby', 'eruby'] } " rails support
-Plug 'sheerun/vim-haml', { 'for': 'haml' } " haml
-
 " > elixir
-Plug 'elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] } " syntax highlighting and filetype detection
-Plug 'slashmili/alchemist.vim', { 'for': ['elixir', 'eelixir'] } " all the other things like go to definition and format
+" Plug 'elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] } " syntax highlighting and filetype detection
+" Plug 'slashmili/alchemist.vim', { 'for': ['elixir', 'eelixir'] } " all the other things like go to definition and format
+
+" > CLisp (VLime)
+Plug 'l04m33/vlime', {'rtp': 'vim'}
+
+" > auto-pairs 
+Plug 'jiangmiao/auto-pairs'
+
+" > Python
+Plug 'python-mode/python-mode' , { 'for': 'python', 'branch': 'develop' }
 
 " > javascript / typescript
-Plug 'yuezk/vim-js', { 'for': 'javascript' }
-Plug 'HerringtonDarkholme/yats.vim' " advanced typescript syntax highlighting
-Plug 'MaxMEllon/vim-jsx-pretty', { 'for': ['javascript', 'typescript'] }
-Plug 'Ivo-Donchev/vim-react-goto-definition', { 'for': ['javascript', 'typescript'] }
-Plug 'joukevandermaas/vim-ember-hbs', { 'for': ['html.handlebars'] }
+" Plug 'yuezk/vim-js'
+" Plug 'HerringtonDarkholme/yats.vim'
+" Plug 'MaxMEllon/vim-jsx-pretty'
+" Plug 'Ivo-Donchev/vim-react-goto-definition'
+" Plug 'leafgarland/typescript-vim'
+" Plug 'joukevandermaas/vim-ember-hbs'
 
 " css
 Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
@@ -67,7 +70,13 @@ Plug 'honza/vim-snippets' " actual snippets
 Plug 'gerw/vim-HiLinkTrace' " provides <Plug>HiLinkTrace to debug syntax highlighting
 
 " completion framework and much more
-Plug 'neoclide/coc.nvim', { 'branch': 'release' }
+Plug 'neoclide/coc.nvim', {
+      \ 'branch': 'release',
+      \ 'do': ':CocInstall coc-git coc-vimlsp coc-json coc-css coc-explorer'
+      \ }
+
+" > highlighting
+Plug 'jackguo380/vim-lsp-cxx-highlight'
 
 " > style
 Plug 'dense-analysis/ale' " Asynchronous Lint Engine
@@ -92,7 +101,34 @@ Plug 'dag/vim-fish', { 'for': 'fish' } " support for fish
 Plug 'lucasprag/simpleblack'
 
 " > take a look
-"https://github.com/m00qek/nvim-contabs
+" https://github.com/m00qek/nvim-contabs
+
+Plug 'lervag/vimtex'
+
+"if has('nvim')
+"  Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+"else
+"  Plug 'Shougo/deoplete.nvim'
+"  Plug 'roxma/nvim-yarp'
+"  Plug 'roxma/vim-hug-neovim-rpc'
+"endif
+
+"Plug 'Shougo/neosnippet.vim'
+"Plug 'Shougo/neosnippet-snippets'
+
+Plug 'SirVer/ultisnips'
+Plug 'honza/vim-snippets'
+
+Plug 'KeitaNakamura/tex-conceal.vim', {'for': 'tex'} " for VimPlug
+
+" > to take a look
+" https://github.com/autozimu/LanguageClient-neovim
+" https://github.com/avdgaag/vim-phoenix
+" https://github.com/Shougo/deoplete.nvim
+" https://github.com/junegunn/vim-easy-align
+"
+" > keep an eye
+"https://github.com/hardcoreplayers/spaceline.vim, cool, but not customizable
 "https://github.com/reedes/vim-wordy
 "https://github.com/glidenote/memolist.vim
 "https://github.com/AndrewRadev/splitjoin.vim
