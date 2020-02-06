@@ -105,18 +105,16 @@ let g:ale_lint_on_enter = 0
 " add linters and fixers
 let g:ale_linters = {
       \ 'ruby': ['rubocop'],
-      \ 'javascript': ['eslint'],
-      \ 'typescript': ['eslint'],
-      \ 'typescript.tsx': ['eslint'],
+      \ 'python': ['flake8'],
+      \ 'latex': ['chktex'],
       \}
 
 let g:ale_fixers = {
       \ 'ruby': ['rubocop'],
-      \ 'javascript': ['eslint'],
-      \ 'typescript': ['eslint'],
-      \ 'typescript.tsx': ['eslint'],
-      \}
-
+      \ 'python': ['flake8'],
+      \ 'latex': ['chktex'],
+     \}
+ 
 " keep sign column always open
 let g:ale_sign_column_always = 1
 

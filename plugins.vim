@@ -142,11 +142,11 @@ Plug 'tomtom/tcomment_vim'
 " https://github.com/junegunn/vim-easy-align
 "
 " > keep an eye
-"https://github.com/hardcoreplayers/spaceline.vim, cool, but not customizable
-"https://github.com/reedes/vim-wordy
-"https://github.com/glidenote/memolist.vim
-"https://github.com/AndrewRadev/splitjoin.vim
-"https://github.com/pechorin/any-jump.vim
+" https://github.com/hardcoreplayers/spaceline.vim, cool, but not customizable
+" https://github.com/reedes/vim-wordy
+" https://github.com/glidenote/memolist.vim
+" https://github.com/AndrewRadev/splitjoin.vim
+" https://github.com/pechorin/any-jump.vim
 
 "https://github.com/fmoralesc/vim-pad
 "https://github.com/brooth/far.vim
