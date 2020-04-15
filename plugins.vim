@@ -21,6 +21,18 @@ Plug 'scrooloose/nerdcommenter' " comment code
 " Plug 'elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] } " syntax highlighting and filetype detection
 " Plug 'slashmili/alchemist.vim', { 'for': ['elixir', 'eelixir'] } " all the other things like go to definition and format
 
+Plug 'tpope/vim-surround' " makes surroundings easy
+Plug 'dhruvasagar/vim-table-mode' " table creator & formatter allowing one to create neat tables as you type
+Plug 'junegunn/vim-easy-align' " select text, run :EasyAlign, choose a char to align, press enter
+
+" > ruby
+"Plug 'tpope/vim-rbenv' " sets ruby path and provide rbenv command
+"Plug 'tpope/vim-bundler' " very usefull when generating ctags for gems and more
+"Plug 'vim-ruby/vim-ruby' " ruby support
+"Plug 'tpope/vim-rails' " rails support
+"Plug 'sheerun/vim-haml' " haml
+"Plug 'gerw/vim-HiLinkTrace' " provides <Plug>HiLinkTrace to debug syntax highlighting
+
 " > CLisp (VLime)
 Plug 'l04m33/vlime', {'rtp': 'vim'}
 
@@ -87,7 +99,7 @@ Plug 'Yggdroot/indentLine', { 'on': 'IndentLinesToggle' }
 Plug 'norcalli/nvim-colorizer.lua' " high-performance color highlighter for Neovim
 
 " > status line
-Plug 'itchyny/lightline.vim' " really light and fast status line	
+Plug 'itchyny/lightline.vim' " really light and fast status line
 Plug 'maximbaz/lightline-ale' " integrates ALE and Lightline
 
 " > windows
@@ -99,9 +111,6 @@ Plug 'dag/vim-fish', { 'for': 'fish' } " support for fish
 
 " > colorschemes
 Plug 'lucasprag/simpleblack'
-
-" > take a look
-" https://github.com/m00qek/nvim-contabs
 
 Plug 'lervag/vimtex'
 
@@ -126,6 +135,7 @@ Plug 'elixir-editors/vim-elixir'
 Plug 'tomtom/tcomment_vim'
 
 " > to take a look
+" https://github.com/m00qek/nvim-contabs
 " https://github.com/autozimu/LanguageClient-neovim
 " https://github.com/avdgaag/vim-phoenix
 " https://github.com/Shougo/deoplete.nvim
@@ -137,6 +147,7 @@ Plug 'tomtom/tcomment_vim'
 "https://github.com/glidenote/memolist.vim
 "https://github.com/AndrewRadev/splitjoin.vim
 "https://github.com/pechorin/any-jump.vim
+
 "https://github.com/fmoralesc/vim-pad
 "https://github.com/brooth/far.vim
 "https://github.com/justinmk/vim-sneak

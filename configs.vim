@@ -102,19 +102,21 @@ let g:ale_ruby_rubocop_executable = 'bundle'
 let g:ale_lint_on_enter = 0
 
 " ALE config
+" add linters and fixers
 let g:ale_linters = {
-      \ 'ruby': ['standardrb'],
-      \ 'python': ['flake8'],
-      \ 'latex': ['chktex'],
-      \ 'sh': ['language_server'],
+      \ 'ruby': ['rubocop'],
+      \ 'javascript': ['eslint'],
+      \ 'typescript': ['eslint'],
+      \ 'typescript.tsx': ['eslint'],
       \}
 
 let g:ale_fixers = {
-      \ 'ruby': ['standardrb'],
-      \ 'python': ['flake8'],
-      \ 'latex': ['chktex'],
-     \}
- 
+      \ 'ruby': ['rubocop'],
+      \ 'javascript': ['eslint'],
+      \ 'typescript': ['eslint'],
+      \ 'typescript.tsx': ['eslint'],
+      \}
+
 " keep sign column always open
 let g:ale_sign_column_always = 1
 
