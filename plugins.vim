@@ -17,41 +17,14 @@ Plug 'qpkorr/vim-bufkill' " :BB :BF, like :bb and bf but in the context of the w
 " > editing tools
 Plug 'scrooloose/nerdcommenter' " comment code
 
-" > elixir
-" Plug 'elixir-editors/vim-elixir', { 'for': ['elixir', 'eelixir'] } " syntax highlighting and filetype detection
-" Plug 'slashmili/alchemist.vim', { 'for': ['elixir', 'eelixir'] } " all the other things like go to definition and format
-
-Plug 'tpope/vim-surround' " makes surroundings easy
-Plug 'dhruvasagar/vim-table-mode' " table creator & formatter allowing one to create neat tables as you type
-Plug 'junegunn/vim-easy-align' " select text, run :EasyAlign, choose a char to align, press enter
-
-" > ruby
-"Plug 'tpope/vim-rbenv' " sets ruby path and provide rbenv command
-"Plug 'tpope/vim-bundler' " very usefull when generating ctags for gems and more
-"Plug 'vim-ruby/vim-ruby' " ruby support
-"Plug 'tpope/vim-rails' " rails support
-"Plug 'sheerun/vim-haml' " haml
-"Plug 'gerw/vim-HiLinkTrace' " provides <Plug>HiLinkTrace to debug syntax highlighting
-
 " > CLisp (VLime)
 Plug 'l04m33/vlime', {'rtp': 'vim'}
 
-" > auto-pairs 
+" > auto-pairs
 Plug 'jiangmiao/auto-pairs'
 
 " > Python
 Plug 'python-mode/python-mode' , { 'for': 'python', 'branch': 'develop' }
-
-" > javascript / typescript
-" Plug 'yuezk/vim-js'
-" Plug 'HerringtonDarkholme/yats.vim'
-" Plug 'MaxMEllon/vim-jsx-pretty'
-" Plug 'Ivo-Donchev/vim-react-goto-definition'
-" Plug 'leafgarland/typescript-vim'
-" Plug 'joukevandermaas/vim-ember-hbs'
-
-" css
-Plug 'cakebaker/scss-syntax.vim', { 'for': 'scss' }
 
 " markdown
 Plug 'tpope/vim-markdown', { 'for': 'markdown' } " add syntax highlighting to code block on markdown files
