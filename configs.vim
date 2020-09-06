@@ -237,3 +237,6 @@ let g:BufKillCreateMappings = 0
 let g:UltiSnipsExpandTrigger="<tab>"
 let g:UltiSnipsJumpForwardTrigger="<c-b>"
 let g:UltiSnipsJumpBackwardTrigger="<c-z>"
+
+" Config TextWidth
+autocmd FileType text,markdown,tex setlocal textwidth=80

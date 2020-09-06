@@ -3,3 +3,6 @@ plugged
 sessions
 
 spell
+
+.ccls-cache/
+tags
