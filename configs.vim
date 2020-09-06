@@ -240,3 +240,6 @@ let g:UltiSnipsJumpBackwardTrigger="<c-z>"
 
 " Config TextWidth
 autocmd FileType text,markdown,tex setlocal textwidth=80
+
+" NASM for Assembly
+let g:asmsyntax = 'nasm'
